@@ -1,0 +1,22 @@
+{
+  "name": "mongoose-odm",
+  "version": "1.0.0",
+  "description": " using the Object Document Mapping (mongoose) to deal with MongoDB",
+  "main": "mongoose.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walid-hajhussien/mongoose-ODM.git"
+  },
+  "author": "Walid-HajHussien",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/walid-hajhussien/mongoose-ODM/issues"
+  },
+  "homepage": "https://github.com/walid-hajhussien/mongoose-ODM#readme",
+  "dependencies": {
+    "mongoose": "^5.9.0"
+  }
+}

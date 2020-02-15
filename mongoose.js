@@ -22,16 +22,3 @@ db.on("error", error => {
 db.once("open", function() {
   console.log(chalk.green("mongoDB connected successfully"));
 });
-
-// var user = new dbModel.User({
-//   name: "walid",
-//   age: 29
-// });
-
-// user.save().then(result => {
-//   console.log(result);
-// });
-
-dbMethod.deleteMany(dbModel.User, { age: 20 }).then(result => {
-  console.log(result);
-});

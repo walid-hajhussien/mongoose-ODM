@@ -4,9 +4,9 @@ function findOne(modelName, query, fieldsToReturn) {
   return modelName.findOne(query, fieldsToReturn);
 }
 
-// findAll  /query => {name:'walid'} or {} to find all data
+// findMany  /query => {name:'walid'} or {} to find all data
 
-function findAll(modelName, query) {
+function findMany(modelName, query) {
   return modelName.find(query);
 }
 
@@ -47,7 +47,7 @@ function deleteMany(modelName, query) {
 }
 
 module.exports = {
-  findAll: findAll,
+  findMany: findMany,
   findOne: findOne,
   insertOne: insertOne,
   insertMany: insertMany,

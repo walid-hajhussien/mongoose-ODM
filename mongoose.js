@@ -1,4 +1,6 @@
 const mongoose = require("mongoose");
+const dbModel = require("./Model");
+const dbMethod = require("./utils ");
 const chalk = require("chalk");
 
 const dbName = "task-manager-api";
@@ -21,12 +23,15 @@ db.once("open", function() {
   console.log(chalk.green("mongoDB connected successfully"));
 });
 
-// create the mongoose model
-const User = mongoose.Model("user", {
-  name: {
-    type: String
-  },
-  age: {
-    type: Number
-  }
+// var user = new dbModel.User({
+//   name: "walid",
+//   age: 29
+// });
+
+// user.save().then(result => {
+//   console.log(result);
+// });
+
+dbMethod.findAll(dbModel.User, {}).then(result => {
+  console.log(result);
 });

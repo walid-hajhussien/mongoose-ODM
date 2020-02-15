@@ -32,6 +32,6 @@ db.once("open", function() {
 //   console.log(result);
 // });
 
-dbMethod.updateMany(dbModel.User, { age: 12 }, { age: 0 }).then(result => {
+dbMethod.deleteMany(dbModel.User, { age: 20 }).then(result => {
   console.log(result);
 });

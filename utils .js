@@ -34,11 +34,25 @@ function updateMany(modelName, query, updateData) {
   return modelName.updateMany(query, updateData);
 }
 
+// deleteOne  / query => {name:'walid'}
+
+function deleteOne(modelName, query) {
+  return modelName.deleteOne(query);
+}
+
+// deleteMany  / query => {name:'walid'}
+
+function deleteMany(modelName, query) {
+  return modelName.deleteMany(query);
+}
+
 module.exports = {
   findAll: findAll,
   findOne: findOne,
   insertOne: insertOne,
   insertMany: insertMany,
   updateOne: updateOne,
-  updateMany: updateMany
+  updateMany: updateMany,
+  deleteOne: deleteOne,
+  deleteMany: deleteMany
 };

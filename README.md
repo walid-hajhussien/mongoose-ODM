@@ -15,11 +15,7 @@ implement mongodb operations using Object Document Mapping (mongoose)
 
 # Files Structure
 
-- Schema
-  create mongoDB schema
-- Model
-  create mongoDB Model
-- utils
-  create mongoDB Methods
-- mongoose
-  create mongoDB connection
+- Schema : create mongoDB schema
+- Model : create mongoDB Model
+- utils : create mongoDB Methods
+- mongoose : create mongoDB connection

@@ -32,6 +32,6 @@ db.once("open", function() {
 //   console.log(result);
 // });
 
-dbMethod.findOne(dbModel.User, { age: 14 }, {}).then(result => {
+dbMethod.insertMany(dbModel.User, [{ name: "soso", age: 10 }]).then(result => {
   console.log(result);
 });

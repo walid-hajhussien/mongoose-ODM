@@ -10,7 +10,21 @@ function findAll(modelName, query) {
   return modelName.find(query);
 }
 
+// insertOne /data => {name:'walid',age:25}
+
+function insertOne(modelName, data) {
+  return modelName.create(data);
+}
+
+// insertMany / data => [{name:'walid',age:25},{{name:'ahmed',age:24}}]
+
+function insertMany(modelName, data) {
+  return modelName.insertMany(data);
+}
+
 module.exports = {
   findAll: findAll,
-  findOne: findOne
+  findOne: findOne,
+  insertOne: insertOne,
+  insertMany: insertMany
 };

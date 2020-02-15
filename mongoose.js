@@ -32,6 +32,6 @@ db.once("open", function() {
 //   console.log(result);
 // });
 
-dbMethod.findAll(dbModel.User, {}).then(result => {
+dbMethod.findOne(dbModel.User, { age: 14 }, {}).then(result => {
   console.log(result);
 });

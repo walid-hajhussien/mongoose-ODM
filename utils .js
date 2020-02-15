@@ -22,9 +22,23 @@ function insertMany(modelName, data) {
   return modelName.insertMany(data);
 }
 
+// updateOne / query => {name:'walid'} , updateData => {age:27}
+
+function updateOne(modelName, query, updateData) {
+  return modelName.updateOne(query, updateData);
+}
+
+// updateMany / query => {name:'walid'} , updateData => {age:27}
+
+function updateMany(modelName, query, updateData) {
+  return modelName.updateMany(query, updateData);
+}
+
 module.exports = {
   findAll: findAll,
   findOne: findOne,
   insertOne: insertOne,
-  insertMany: insertMany
+  insertMany: insertMany,
+  updateOne: updateOne,
+  updateMany: updateMany
 };

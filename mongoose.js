@@ -32,6 +32,6 @@ db.once("open", function() {
 //   console.log(result);
 // });
 
-dbMethod.insertMany(dbModel.User, [{ name: "soso", age: 10 }]).then(result => {
+dbMethod.updateMany(dbModel.User, { age: 12 }, { age: 0 }).then(result => {
   console.log(result);
 });

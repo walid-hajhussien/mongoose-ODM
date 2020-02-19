@@ -22,3 +22,17 @@ db.on("error", error => {
 db.once("open", function() {
   console.log(chalk.green("mongoDB connected successfully"));
 });
+
+dbMethod
+  .insertOne(dbModel.User, {
+    name: "eee2",
+    age: 0
+  })
+  .then(result => {
+    console.log(result);
+  })
+  .catch(err => {
+    if (err.name === "ValidationError") {
+      console.log(``);
+    }
+  });

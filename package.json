@@ -19,6 +19,6 @@
   "homepage": "https://github.com/walid-hajhussien/mongoose-ODM#readme",
   "dependencies": {
     "chalk": "^3.0.0",
-    "mongoose": "^5.9.0"
+    "mongoose": "^5.13.15"
   }
 }
